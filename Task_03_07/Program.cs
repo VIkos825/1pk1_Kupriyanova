@@ -14,7 +14,7 @@
             for (double t = 0.5; t <= c; t += 0.5)
             {
                 v = g * t;
-                Console.WriteLine(v + " м/с");
+                Console.WriteLine("Скорость тела через " + t + " секунд после падения: " + v + " м/с");
             }
         }
     }
