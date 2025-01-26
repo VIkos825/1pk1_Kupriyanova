@@ -12,8 +12,7 @@ namespace Task_04_09
             int n = int.Parse(Console.ReadLine());
             int[] array = new int[n];
             Random rnd = new Random();
-
-                
+            
                 
             
         }
