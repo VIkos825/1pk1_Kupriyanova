@@ -15,16 +15,27 @@
             {
                 for (int j = 0; j < n; j++)
                 {
-                    array[i, j] = rnd.Next(0, 100);
+                    array[i, j] = rnd.Next(0,2);
                     Console.Write(array[i, j] + " ");
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
+
+                    if (i == j && array[i,j] == 0)
+                    {
+                        //Console.WriteLine("Матрица является диагональной ");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write(array[i,j] + " ");
+                        Console.ResetColor();
+                    }
+                    else Console.Write(array[i,j] + " ");
                 }
+                Console.WriteLine();
             }
         }
     }
